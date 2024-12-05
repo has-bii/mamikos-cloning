@@ -50,7 +50,7 @@ export default function UserProfile() {
 
             <div className="flex flex-col">
               <p
-                className="text-deep-blue max-w-[460px] overflow-hidden truncate font-bold"
+                className="max-w-[460px] overflow-hidden truncate font-bold text-deep-blue"
                 title={user?.user_metadata?.full_name}
               >
                 {user?.user_metadata?.full_name}
@@ -69,7 +69,7 @@ export default function UserProfile() {
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <Link href="/dashboard">
+            <Link href="/profile">
               <UserPenIcon />
               Profile
             </Link>

@@ -55,7 +55,7 @@ export default async function LoginButton() {
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href="/dashboard">
+          <Link href="/profile">
             <UserPenIcon />
             Profile
           </Link>
