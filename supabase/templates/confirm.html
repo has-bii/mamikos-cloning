@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="flex h-screen w-screen items-center justify-center bg-slate-200 p-20">
+    <div class="max-w-[600px] space-y-4 rounded-xl bg-white p-6 shadow-md">
+      <header class="space-y-2">
+        <h1 class="text-3xl font-bold">Konfirmasi Email Anda</h1>
+        <p class="text-sm text-gray-400">
+          Terima kasih telah mendaftar di Basefind! Untuk menyelesaikan proses pendaftaran dan mulai
+          menggunakan akun Anda, kami memerlukan konfirmasi alamat email Anda.
+        </p>
+      </header>
+
+      <a
+        href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=signup"
+        class="w-full rounded-lg bg-black py-3 font-semibold text-white"
+      >
+        Konfirmasi Email
+      </a>
+    </div>
+  </body>
+</html>

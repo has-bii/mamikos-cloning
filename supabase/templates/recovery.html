@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="flex h-screen w-screen items-center justify-center bg-slate-200 p-20">
+    <div class="max-w-[600px] space-y-4 rounded-xl bg-white p-6 shadow-md">
+      <header class="space-y-2">
+        <h1 class="text-3xl font-bold">Reset Password</h1>
+        <p class="text-sm text-gray-400">
+          Kami menerima permintaan untuk mereset password akun Anda di Basefind. Jika Anda yang
+          meminta reset password, silakan klik tautan di bawah ini untuk masuk ke akun Anda:
+        </p>
+      </header>
+
+      <a
+        href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=recovery"
+        class="w-full rounded-lg bg-black py-3 font-semibold text-white"
+      >
+        Masuk
+      </a>
+    </div>
+  </body>
+</html>
